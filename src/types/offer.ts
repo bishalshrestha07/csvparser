@@ -11,3 +11,13 @@ export interface Offer {
   url: string;
   upd: string;
 }
+
+export interface FormatOffer {
+  merchantId: string;
+  merchant: string;
+  date: string;
+}
+
+export interface LatestWineOffers {
+  [key: string]: FormatOffer;
+}

@@ -1,10 +1,12 @@
 import { parseCsvToJson } from "./csvParser";
+import { LatestWineOffers } from "./types/offer";
 
 const csvFilePath = "./files/wine-offers.csv";
 
-async function parseData(csvFilePath: string) {
-  const parsedData = await parseCsvToJson(csvFilePath);
-  console.log(parsedData);
+const updatedWineOffers: LatestWineOffers = {};
+
+async function parseData() {
+  await parseCsvToJson(csvFilePath, updatedWineOffers);
 }
 
-parseData(csvFilePath);
+parseData();
