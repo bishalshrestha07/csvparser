@@ -1,0 +1,22 @@
+{
+  "name": "csv-parsing-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "ts-node src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "20.6.3",
+    "ts-node": "10.9.1",
+    "tsc-watch": "6.0.4",
+    "typescript": "5.2.2"
+  },
+  "dependencies": {
+    "csvtojson": "2.0.10"
+  }
+}
